@@ -6,22 +6,34 @@
 
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="import" href="/include/header_cover.html">
 
 </head>
 <body>
-    <div>
+    <div class="header">
         <video id="cover" video autobuffer autoplay>
             <source id="mp4" src="video/coding.mp4" type="video/mp4">
         </video>
         <div class="navbar">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="anm-button pullUp">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mac">Mac</a></li>
+                    <li><a href="#desktop">Desktop</a></li>
+                    <li><a href="#tablet">Tablet</a></li>
+                    <li><a href="#search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="navbar-main">
+            <div class="icon">buy<span>TheBest</span></div><br>
+            <div class="login">
+                <form action="#login">
+                    <input type="text" placeholder="username" name="username"><br>
+                    <input type="password" placeholder="password" name="pwd"><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
         </div>
     </div>
 

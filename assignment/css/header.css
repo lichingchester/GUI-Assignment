@@ -1,14 +1,141 @@
+/* Backup codes */
+/*#cover{*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: -10%;*/
+    /*-webkit-transform: translateX(-50%);*/
+    /*-ms-transform: translateX(-50%);*/
+    /*-moz-transform: translateX(-50%);*/
+    /*transform: translateX(-50%);*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*z-index: -1000;*/
+    /*overflow: hidden;*/
+/*}*/
+
 /*cover video*/
 #cover{
-    position: absolute;
-    left: 50%;
-    top: -10%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+    /*position: absolute;*/
     width: 100%;
     height: auto;
-    z-index: -1000;
     overflow: hidden;
+    position: absolute;
+    z-index: -1000;
+ }
+
+.navbar{
+    position: static;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0 auto;
+    padding: 0px;
+    float: left;
+    font-size: 20px;
+    top: 10px;
+}
+
+.navbar ul{
+    overflow: hidden;
+    background-color: blue;
+    width: auto;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    /*background-color: red;*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul li a{
+    /*display: inline-flex;*/
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    color: white;
+    cursor: pointer;
+}
+
+div.anm-button a
+{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+}
+
+/* Pull up  */
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before
+{
+    height: 100%;
+}
+
+/**** header main - login or sign in ****/
+.navbar-main{
+    /*background-color: brown;*/
+    border: 2px solid brown;
+    position: static;
+    height: auto;
+    width: auto;
+    margin: 300px auto;
+}
+
+.icon{
+    position: absolute;
+    left: calc(50% - 550px);
+    font-size: 82px;
+    color: darkgray;
+}
+.icon span{
+    color: cornflowerblue;
+}
+
+.login{
+    position: absolute;
+    left: calc(50% + 20px);
+    top: calc(50% - 20px);
+}
+
+.login input[type=text]{
+    width: 350px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.login input[type=password]{
+    width: 350px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 20px;
 }
