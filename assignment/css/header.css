@@ -16,10 +16,11 @@
 /*cover video*/
 #cover{
     /*position: fixed;*/
-    width: 150%;
+    width: 100%;
     height: auto;
     /*min-height: 1000px;*/
-    top: -90%;
+    top: -60%;
+    /*top: calc(width + 300px);*/
     overflow: hidden;
     position: absolute;
     z-index: 0;

@@ -16,21 +16,4 @@ $(window).scroll(function() {
     }else if($(this).scrollTop() > 150){
         $(".navbar-main").addClass("navbar-main-active");
     }
-
-    // if($(this).scrollTop() > 150){
-    //     alert("asdf");
-    // }
-
-    // if ($(this).scrollTop()>0)
-    // {
-    //     // $(".for-hide").fadeOut();
-    //     $(".navbar-main").css("opacity", 0);
-    //     $(".navbar-main").css("animation", "pulse 5s infinite");
-    // }
-    // else
-    // {
-    //     // $(".for-hide").fadeIn();
-    //     $(".navbar-main").css("opacity", 1);
-    //     $(".navbar-main").css("animation", "pulse 5s infinite");
-    // }
 });
