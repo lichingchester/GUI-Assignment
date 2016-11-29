@@ -3,6 +3,8 @@ html, body{
     height: 100%;
     margin: 0px auto;
     font-family: Arial;
+    background-color: black;
+    z-index: -1000;
 }
 
 a{
@@ -13,8 +15,9 @@ a{
     position: relative;
     width: auto;
     height: auto;
-    border: 2px solid saddlebrown;
+    /*border: 2px solid saddlebrown;*/
 }
+
 
 
 
