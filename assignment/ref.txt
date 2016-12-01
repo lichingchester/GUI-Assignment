@@ -6,3 +6,16 @@ macbook pro
 
 http://www.apple.com/ipad-mini-4/
 ipadmini4
+
+http://www.flaticon.com/
+icon
+
+https://www.apple.com/pr/products/
+products-mac
+
+http://store.hp.com/us/en/pdp/desktops
+product-desktop-hp
+
+http://shopap.lenovo.com/hk/en/desktops
+product-desktop-lenovo
+
