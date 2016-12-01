@@ -15,25 +15,23 @@
 
 /*cover video*/
 #cover{
-    /*position: fixed;*/
     width: 100%;
     height: auto;
-    /*min-height: 1000px;*/
-    top: -20%;
-    /*top: calc(width + 300px);*/
+    top: -10%;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     z-index: 0;
-    object-fit: cover;
+    /*border: solid 2px saddlebrown;*/
 }
 
 .navbar{
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 50px;
+    height: auto;
     text-align: center;
     /*background-color: blueviolet;*/
+    /*border: 2px solid aqua;*/
     margin: 0 auto;
     padding: 0px;
     float: left;
@@ -101,32 +99,91 @@ div.pullUp a:hover:before
     /*border: 2px solid brown;*/
     position: static;
     height: auto;
-    width: auto;
-    margin: 300px auto;
+    width: 100%;
+    margin-top: 50px;
     opacity: 1;
-    transition: 1s;
+    transition: 2s;
+    z-index: 10;
     /*animation: pulse 5s infinite;*/
 }
 .navbar-main-active{
     opacity: 0;
     transition: 1s;
 }
+.navbar-main-active2{
+    opacity: 1;
+    transition: 1s;
+}
 
 .icon{
-    position: absolute;
-    left: calc(50% - 500px);
-    top: calc(50% + 110px);
-    font-size: 82px;
+    position: static;
+    font-family: chasing;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-size: 300px;
     color: darkgray;
+    /*border: 2px solid yellow;*/
 }
 .icon span{
     color: cornflowerblue;
 }
 
-.login{
+.navbar-main-input{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /*border: 2px solid seagreen;*/
+    padding-top: 5px;
+    background: rgba(50,50,50,0.7);
+}
+
+.register{
+    margin-top: 50px;
     position: absolute;
-    left: calc(50% + 80px);
-    top: calc(50% + 80px);
+    height: auto;
+    width: auto;
+    left: calc(50% - 450px);
+    top: 0px;
+    /*border: solid 2px pink;*/
+}
+.register-text{
+    position: static;
+    top: 0px;
+    color: darkgray;
+    /*border: solid 2px pink;*/
+    padding-top: 120px;
+    font-size: 35px;
+}
+.register-button{
+    position: static;
+    text-align: center;
+    width: 375px;
+    height: auto;
+    background: rgba(100,100,100,0.7);
+    border: 0px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 11px;
+}
+.register-button:hover{
+     background: rgba(80,80,80,0.7);
+ }
+
+.login{
+    margin-top: 50px;
+    position: absolute;
+    height: auto;
+    left: calc(50% + 50px);
+    top: 0px;
+    /*border: solid 2px fuchsia;*/
+    font-family: remachine;
 }
 
 .login input[type=text]{
@@ -162,7 +219,7 @@ div.pullUp a:hover:before
 
 input[type=submit]{
     width: 375px;
-    height: 50px;
+    height: 70px;
     background: rgba(100,100,100,0.7);
     border: 0px;
     border-radius: 10px;
@@ -173,5 +230,24 @@ input[type=submit]{
     cursor: pointer;
 }
 .login-submit:hover{
-    background: rgba(50,50,50,0.7);
+    background: rgba(80,80,80,0.7);
+}
+
+
+/**** custom setting ****/
+@font-face{
+    font-family: remachine;
+    src: url('../font/use_remachine/RemachineScript_Personal_Use.ttf') format("truetype");
+}
+@font-face{
+    font-family: chasing;
+    src: url('../font/use2_chasing/ChasingEmbersDemoVersion.ttf') format("truetype");
+}
+@font-face{
+    font-family: underAuthority;
+    src: url('../font/underAuthority/UnderAuthority.ttf') format("truetype");
+}
+@font-face{
+    font-family: sorrier2;
+    src: url('../font/sorrier/sorrier_statements.ttf') format("truetype");
 }
