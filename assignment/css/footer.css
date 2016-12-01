@@ -1,10 +1,12 @@
-footer{
-    background-color: #292c2f;
+.footer{
+    background: rgba(50,50,50,0.7);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
+    height: auto;
     text-align: left;
     padding: 60px 50px;
+    z-index: 10;
 }
 
 .footer-left,
@@ -22,17 +24,18 @@ footer{
 
 /* The website name */
 
-footer h3{
+.footer h3{
     color:  #ffffff;
     font-size: 56px;
     margin: 0;
 }
 
-footer h3 span{
+.footer h3 span{
     color:  #5383d3;
 }
 
 .footer-company-name{
+    /*font-family: ;*/
     color:  #8f9296;
     font-size: 14px;
     font-weight: normal;
@@ -45,21 +48,21 @@ footer h3 span{
     width: 35%;
 }
 
-footer .footer-center p{
+.footer .footer-center p{
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
     margin:0;
 }
 
-footer .footer-center p span, p{
+.footer .footer-center p span, p{
     display:block;
     font-weight: normal;
     font-size:14px;
     line-height:2;
 }
 
-footer .footer-center p a{
+.footer .footer-center p a{
     color:  #5383d3;
     text-decoration: none;;
 }
@@ -67,11 +70,11 @@ footer .footer-center p a{
 
 /* Footer Right */
 
-footer .footer-right{
+.footer .footer-right{
     width: 20%;
 }
 
-footer .footer-company-about{
+.footer .footer-company-about{
     line-height: 20px;
     color:  #92999f;
     font-size: 13px;
@@ -79,7 +82,7 @@ footer .footer-company-about{
     margin: 0;
 }
 
-footer .footer-company-about span{
+.footer .footer-company-about span{
     display: block;
     color:  #ffffff;
     font-size: 14px;
@@ -87,7 +90,7 @@ footer .footer-company-about span{
     margin-bottom: 20px;
 }
 
-footer .footer-icons{
+.footer .footer-icons{
     margin-top: 25px;
 }
 
@@ -97,43 +100,3 @@ footer .footer-icons{
     border-radius: 8px;
     padding: 3px;
 }
-
-/*footer .footer-icons a{*/
-    /*display: inline-block;*/
-    /*width: 35px;*/
-    /*height: 35px;*/
-    /*cursor: pointer;*/
-    /*background-color:  #33383b;*/
-    /*border-radius: 2px;*/
-
-    /*font-size: 20px;*/
-    /*color: #ffffff;*/
-    /*text-align: center;*/
-    /*line-height: 35px;*/
-
-    /*margin-right: 3px;*/
-    /*margin-bottom: 5px;*/
-/*}*/
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-/*@media (max-width: 880px) {*/
-
-    /*footer{*/
-        /*font: bold 14px sans-serif;*/
-    /*}*/
-
-    /*footer .footer-left,*/
-    /*footer .footer-center,*/
-    /*footer .footer-right{*/
-        /*display: block;*/
-        /*width: 100%;*/
-        /*margin-bottom: 40px;*/
-        /*text-align: center;*/
-    /*}*/
-
-    /*footer .footer-center i{*/
-        /*margin-left: 0;*/
-    /*}*/
-
-/*}*/

@@ -11,9 +11,11 @@ $("document").ready(function(){
 })
 
 $(window).scroll(function() {
-    if($(this).scrollTop() <= 50){
-        $(".navbar-main").removeClass("navbar-main-active");
-    }else if($(this).scrollTop() > 150){
-        $(".navbar-main").addClass("navbar-main-active");
+    if($(this).scrollTop() <= 300){
+        $(".navbar-main-input").removeClass("navbar-main-active");
+        $(".navbar-main-input").addClass("navbar-main-active2");
+    }else if($(this).scrollTop() > 300){
+        $(".navbar-main-input").removeClass("navbar-main-active2");
+        $(".navbar-main-input").addClass("navbar-main-active");
     }
 });

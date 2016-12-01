@@ -11,20 +11,13 @@
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/slide.js"></script>
-    <script>
-        $(".login-input").click(function () {
-            //this.setSelectionRange(0, this.value.length);
-            alert("Asdf");
-        })
-    </script>
 </head>
 <body>
+    <video id="cover" loop autoplay>
+        <source id="mp4" src="video/coding.mp4" type="video/mp4">
+    </video>
+
     <div class="header">
-        <div class="cover-fixed">
-            <video id="cover" loop autoplay>
-                <source id="mp4" src="video/coding.mp4" type="video/mp4">
-            </video>
-        </div>
         <div class="navbar">
             <div class="anm-button pullUp">
                 <ul>
@@ -38,8 +31,21 @@
         </div>
         <br>
         <div class="navbar-main">
-            <!--<div class="for-hide">-->
-                <div class="icon">buy<span>TheBest</span></div><br>
+            <div class="icon">
+                buy<span>TheBest</span>
+            </div>
+            <br>
+            <div class="navbar-main-input">
+                <div class="register">
+                    <div class="register-text">
+                        <spec>Don't have an account?</spec>
+                    </div>
+                    <br>
+                    <div class="register-button">
+                        Join us
+                    </div>
+                </div>
+                <br>
                 <div class="login">
                     <form action="#login">
                         <input type="text" placeholder="username" name="username" class="login-input"><br>
@@ -47,9 +53,10 @@
                         <input type="submit" value="Login" class="login-submit">
                     </form>
                 </div>
-            <!--</div>-->
+            </div>
         </div>
     </div>
+
     <div class="slideshow-container">
 
         <div class="mySlides fade start">
@@ -66,63 +73,46 @@
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <footer>
-
-        <div class="footer-left">
-
-            <h3>buy<span>TheBest</span></h3>
-
-            <p class="footer-company-name">BuyBestProduct Ltd &copy; 2016</p>
-
-            <div class="footer-icons">
-
-                <a href="http://www.facebook.com"><img src="img/icon/facebook.png"></a>
-                <a href="http://www.instagram.com"><img src="img/icon/instagram.png"></a>
-                <a href="http://www.twitter.com"><img src="img/icon/twitter.png"></a>
-                <a href="http://www.youtube.com"><img src="img/icon/youtube.png"></a>
-
-            </div>
+        <div style="text-align:center" class="choose">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <div class="footer-center">
-
-            <div>
-                <p>
-                    <span>18 Tsing Wun Road</span>
-                    <span>Tuen Mun, New Territories</span>
+        <div class="footer">
+            <div class="footer-left">
+                <h3>buy<span>TheBest</span></h3>
+                <p class="footer-company-name">BuyBestProduct Ltd &copy; 2016</p>
+                <div class="footer-icons">
+                    <a href="http://www.facebook.com"><img src="img/icon/facebook.png"></a>
+                    <a href="http://www.instagram.com"><img src="img/icon/instagram.png"></a>
+                    <a href="http://www.twitter.com"><img src="img/icon/twitter.png"></a>
+                    <a href="http://www.youtube.com"><img src="img/icon/youtube.png"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <p>
+                        <span>18 Tsing Wun Road</span>
+                        <span>Tuen Mun, New Territories</span>
+                    </p>
+                </div>
+                <div>
+                    <p>Tel: 2463 0066</p><br>
+                    <p>Fax: 2454 5654</p>
+                </div>
+                <div>
+                    <p><a href="mailto:buy">support@buybestproducts.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Electronic commerce, commonly known as e-commerce, is a type of industry where the buying and selling of products or services is conducted over electronic systems such as the World Wide Web.
                 </p>
             </div>
-
-            <div>
-                <p>Tel: 2463 0066</p><br>
-                <p>Fax: 2454 5654</p>
-            </div>
-
-            <div>
-                <p><a href="mailto:buy">support@buybestproducts.com</a></p>
-            </div>
-
         </div>
+    </div>
 
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>About the company</span>
-                Electronic commerce, commonly known as e-commerce, is a type of industry where the buying and selling of products or services is conducted over electronic systems such as the World Wide Web.
-            </p>
-
-
-
-        </div>
-
-    </footer>
 </body>
 </html>

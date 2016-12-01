@@ -4,8 +4,8 @@
 
 .slideshow-container {
     position: relative;
-    margin: auto;
-    background-color: black;
+    /*margin: auto;*/
+    background: rgba(20,20,20,0.7);
 }
 
 .img-slide{

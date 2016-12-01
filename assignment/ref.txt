@@ -19,3 +19,5 @@ product-desktop-hp
 http://shopap.lenovo.com/hk/en/desktops
 product-desktop-lenovo
 
+http://www.1001freefonts.com/fantasy-fonts.php
+font
