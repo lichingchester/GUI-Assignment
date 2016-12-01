@@ -325,24 +325,86 @@
       "type":"tablet",
       "name":"Yoga Book",
       "star":5,
-      "price":5399,
-      "pref":"Up to Intel® Core™ m7 vPro™ Processor\nWindows 10 Pro - Lenovo recommends Windows 10 Pro.\nIntel® HD Integrated Graphics\nUp to 16 GB LPDDR3\nUp to 1 TB SSD\n2 MP or 8 MP with Flash 1080p\nUp to 15 Hours of battery life with Productivity Module\n12 FHD+ 2K (2160 x 1440) IPS, 3:2\nTablet : 291.5 x 209.5 x 0.51 11.45 x 8.25 x 13\nTablet : Starting at 1.7 lbs (767 g)\nKeyboard : Starting at 0.66 lbs (300 g)\nvPro™ Technology\nIR Camera, No WiGig and No NFC(Optional)\n5 Hours Battery Life, HDMI, OneLink+ and full size USB\nA 60 display from 2 Meters.\nThinkPad® Thin Keyboard / Stylus Pen\nBlack Red\n1 x USB 3.0\n2 x 2 MIMO 802.11 a/c",
-      "desc":"This unique tablet offers a lot more than business on-the-go. It features a modular design that lets you turn your device into a laptop, a projector. Plus the detachable keyboard lets you personalize your X1 Tablet with color choices, and it includes the legendary TrackPoint and trackpad—so no mouse required.",
+      "price":3999,
+      "pref":"Intel® Atom™ x5-Z8550 Processor(2M Cache, Quad-Core, Up to 2.4 GHz)\nAndroid 6.0\nRAM : 4 GB LPDDR3\nCard Slot : microSD™; Supports Up to 128 GB\nGeneral Usage : 15 Hours\n(inches) : 10.1" x 0.38" x 6.72"\nStarting at 1.52 lbs (690 g)\nSize : 10.1 FHD IPS(1920 x 1200)\nBrightness : 400 nit\nOn Screen : Capacitive Touch with AnyPen Technology\nMetal\nGunmetal Grey / Champagne Gold\nRear : 8 MP Auto-Focus\nFront : 2 MP Fixed-Focus\nAmbient Light Sensor\nGPS+Glonass, (A-GPS – Optional for LTE Version)\n4G FDD-LTE : 1/3/4/7/8/12/20/25\nSpeed: FDD/TDD Cat 4 (Max. DL150Mbps, UL50Mbps)*\nWiFi 802.11 a/b/g/n/ac\nBluetooth v4.0\nMicro HDMI for video output\nMicro USB 2.0 for Power Charge and Data Sync, Support OTG",
+      "desc":"Mobile productivity enters a new era with the Lenovo Yoga Book, a 2-in-1 tablet like none you’ve seen before. Make notes or sketches using a stylus with real ink. Type on the Halo keyboard that appears when you need it – and vanishes when you don’t. Get things done on our custom version of Android that lets you be productive like never before. Thin, light, and stylish, Yoga Book sets your imagination free – anytime, anywhere.",
       "img":[
-        "img/product/tablet/4/1.jpg",
-        "img/product/tablet/4/2.jpg",
-        "img/product/tablet/4/3.jpg",
-        "img/product/tablet/4/4.jpg",
-        "img/product/tablet/4/5.jpg",
-        "img/product/tablet/4/6.jpg",
-        "img/product/tablet/4/7.jpg",
-        "img/product/tablet/4/8.jpg",
-        "img/product/tablet/4/9.jpg",
-        "img/product/tablet/4/10.jpg",
-        "img/product/tablet/4/11.jpg",
-        "img/product/tablet/4/12.jpg"
+        "img/product/tablet/5/1.jpg",
+        "img/product/tablet/5/2.jpg",
+        "img/product/tablet/5/3.jpg",
+        "img/product/tablet/5/4.jpg",
+        "img/product/tablet/5/5.jpg",
+        "img/product/tablet/5/6.jpg",
+        "img/product/tablet/5/7.jpg",
+        "img/product/tablet/5/8.jpg",
+        "img/product/tablet/5/9.jpg",
+        "img/product/tablet/5/10.jpg",
+        "img/product/tablet/5/11.jpg",
+        "img/product/tablet/5/12.jpg",
+        "img/product/tablet/5/13.jpg",
+        "img/product/tablet/5/14.jpg"
       ]
     },
-
+    {
+      "type":"tablet",
+      "name":"Ideapad Miix 310",
+      "star":4,
+      "price":2699,
+      "pref":"Intel Atom x5-Z8350 Processor( 1.44GHz 1600MHz 2MB)\nWindows 10 Home 64\n10.1 HD WXGA LED 1280x800\nIntegrated HD Graphics\nTotal memory 2.0GB PC3L-12800 DDR3L 1600 MHz\nHard drive device 64GB\nLenovo BGN Wireless\nBluetooth Version 4.0\nClickPad\n2 Cell Li-Polymer",
+      "desc":"A 10” tablet and PC in one, the affordable Miix 310 is eminently mobile, so you won’t feel confined to a wireless signal, physical keyboard, or budget. The detachable keyboard makes it easy to convert from PC to tablet mode, and the battery can last for up to 10 hours of local video playback on the gorgeous display. Take it anywhere!",
+      "img":[
+        "img/product/tablet/6/1.jpg",
+        "img/product/tablet/6/2.jpg",
+        "img/product/tablet/6/3.jpg",
+        "img/product/tablet/6/4.jpg",
+        "img/product/tablet/6/5.jpg",
+        "img/product/tablet/6/6.jpg",
+        "img/product/tablet/6/7.jpg",
+        "img/product/tablet/6/8.jpg",
+        "img/product/tablet/6/9.jpg",
+        "img/product/tablet/6/10.jpg",
+        "img/product/tablet/6/11.jpg"
+      ]
+    },
+    {
+      "type":"tablet",
+      "name":"Ideapad Miix 700 2-in-1 PC",
+      "star":4,
+      "price":2399,
+      "pref":"6nd Generation Intel® Core™ m5 Processor\nWindows 10 Home\nIntegrated Intel® HD\n4 GB LP-DDR3L\n128 GB SSD\nStereo Speakers with Dolby® Audio Certification\nUp to 9 Hours Local Video Playback\nUp to 12 FHD+ (2160 x 1440), 300 nits\n(mm) : 292 x 8.95 x 210 (inches) : 11.5 x 0.35 x 8.27\nTablet : Starting at 1.7 lbs (780 g)\nWiFi 2 x 2 802.11 a/c, Bluetooth® 4.0\n1 x USB 3.0",
+      "desc":"Thanks to its unique watchband hinge, the Ideapad Miix 700 will make you stand out from the crowd. As you flip effortlessly between Laptop and Tablet mode in your favorite coffee shop or café, you're sure to attract some envious glances.",
+      "img":[
+        "img/product/tablet/7/1.jpg",
+        "img/product/tablet/7/2.jpg",
+        "img/product/tablet/7/3.jpg",
+        "img/product/tablet/7/4.jpg",
+        "img/product/tablet/7/5.jpg",
+        "img/product/tablet/7/6.jpg",
+        "img/product/tablet/7/7.jpg",
+        "img/product/tablet/7/8.jpg",
+        "img/product/tablet/7/9.jpg",
+        "img/product/tablet/7/10.jpg",
+        "img/product/tablet/7/11.jpg",
+        "img/product/tablet/7/12.jpg"
+      ]
+    },
+    {
+      "type":"tablet",
+      "name":"Galaxy TabPro S",
+      "star":5,
+      "price":3599,
+      "pref":"Windows 10 Home\nCPU 2.2GHz Dual-Core\nSize 12.0 (303.7mm)\nFull HD (1920 x 1080) @30fps\nRAM 4 GB\nWi-Fi only\nUSB 3.1\n802.11 a/b/g/n/ac 2.4G+5GHz, VHT80 MIMO\nBluetooth v4.1\nWhite, Black\nWeight(g) 693\nStandard Battery Capacity (mAh) 5200\nUHD 4K (3840 x 2160) @24fps",
+      "desc":"Galaxy TabPro S fits perfectly into a streamlined lifestyle. Looking every inch the part, its sleek, lightweight form makes for a capable companion to your every day.",
+      "img":[
+        "img/product/tablet/8/1.jpg",
+        "img/product/tablet/8/2.jpg",
+        "img/product/tablet/8/3.jpg",
+        "img/product/tablet/8/4.jpg",
+        "img/product/tablet/8/5.jpg",
+        "img/product/tablet/8/6.jpg",
+        "img/product/tablet/8/7.jpg",
+        "img/product/tablet/8/8.jpg"
+      ]
+    }
   ]
 }
