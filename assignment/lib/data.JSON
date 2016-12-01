@@ -1,0 +1,33 @@
+{
+  "users":[
+    {"username":"user001", "password":"password", "address":"1234 Tsing Wun Road", "tel":"12345678", "point":0},
+    {"username":"user002", "password":"password", "address":"1111 Tsing Wun Road", "tel":"11111111", "point":1000},
+    {"username":"user003", "password":"password", "address":"4444 Tsing Wun Road", "tel":"99999999", "point":99999}
+  ],
+
+  "products":[
+    {
+      "type":"mac",
+      "name":"Macbook Pro",
+      "star":5,
+      "price":12899,
+      "img":"img/",
+      "desc":"Touch Bar and Touch ID\n2.9GHz Processor\n256GB Storage\n2.9GHz dual-core Intel Core i5 processor\nTurbo Boost up to 3.3GHz\n8GB 2133MHz memory\n256GB PCIe-based SSD1\nIntel Iris Graphics 550\nFour Thunderbolt 3 ports\nTouch Bar and Touch ID"
+    },
+    {
+      "type":"mac",
+      "name":"Macbook Air",
+      "star":4,
+      "price":8999,
+      "desc":"1.6GHz dual-core Intel Core i5 processor\nTurbo Boost up to 2.7GHz\nIntel HD Graphics 6000\n8GB memory\n128GB PCIe-based flash storage1"
+    },
+    {
+      "type":"mac",
+      "name":"Macbook Air",
+      "star":4,
+      "price":8999,
+      "desc":"1.6GHz dual-core Intel Core i5 processor\nTurbo Boost up to 2.7GHz\nIntel HD Graphics 6000\n8GB memory\n128GB PCIe-based flash storage1"
+    },
+
+  ]
+}
