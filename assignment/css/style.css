@@ -28,16 +28,27 @@ a{
     position: relative;
     width: 100%;
     height: 350px;
+    margin-top: 200px;
     /*border: 2px solid seagreen;*/
     padding-top: 5px;
     background: rgba(50,50,50,0.7);
 }
-.register-page-main left{
 
+.left{
+    margin-top: 50px;
+    position: absolute;
+    height: auto;
+    width: auto;
+    right: calc(50%);
+    left: 10%;
+    top: 0px;
+    /*border: solid 2px pink;*/
 }
-.register-page-main login{
+.left p {
+    font-size: 20px;
+    color: #d1d2d2;
+}
 
-}
 
 
 

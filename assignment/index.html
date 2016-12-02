@@ -55,40 +55,6 @@
                     <div class="register-button" onclick="document.getElementById('register-dialog').style.display='block'">
                         Join us
                     </div>
-
-                    <!--register form-->
-                    <div id="register-dialog" class="register-dialog">
-
-                        <form class="register-dialog-content register-dialog-animate" action="register.html">
-
-                            <div class="imgcontainer">
-                                <span onclick="document.getElementById('register-dialog').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            </div>
-
-                            <div class="container">
-                                <label><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                <label><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                <label><b>Address</b></label>
-                                <input type="text" placeholder="Enter Address" name="address" required>
-
-                                <label><b>Telephone</b></label>
-                                <input type="text" placeholder="Enter Telephone" name="tel" required>
-
-                                <!--google robot checking-->
-                                <div class="g-recaptcha" data-sitekey="6LeCpg0UAAAAANZeXCYMHDxXa4C1PjhRpkBLTMUo"></div>
-
-                                <button type="submit">Register</button>
-                            </div>
-
-                            <div class="container" style="background-color:#f1f1f1">
-                                <button type="button" onclick="document.getElementById('register-dialog').style.display='none'" class="cancelbtn">Cancel</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
                 <br>
                 <div class="login">
@@ -157,6 +123,42 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <!--other form layout-->
+
+    <!--register form-->
+    <div id="register-dialog" class="register-dialog">
+
+        <form class="register-dialog-content register-dialog-animate" action="register.html">
+
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('register-dialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label><b>Address</b></label>
+                <input type="text" placeholder="Enter Address" name="address" required>
+
+                <label><b>Telephone</b></label>
+                <input type="text" placeholder="Enter Telephone" name="tel" required>
+
+                <!--google robot checking-->
+                <div class="g-recaptcha" data-sitekey="6LeCpg0UAAAAANZeXCYMHDxXa4C1PjhRpkBLTMUo"></div>
+
+                <button type="submit">Register</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('register-dialog').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
     </div>
 
 </body>
