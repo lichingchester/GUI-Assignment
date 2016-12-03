@@ -9,26 +9,28 @@ var tel = getParameterByName("tel", document.url);
 
     $(document).ready(function(){
 
-        $.ajax({
-            url: "json/user.json",
-            dataType: "text",
-            success: function(data){
-                var users = JSON.parse(data);
-                users.users.push(
-                    {
-                        "username": username,
-                        "password" : password,
-                        "address": address,
-                        "tel" : tel,
-                        "point": 0
-                    }
-                );
-                alert(users.users[0].username+"\nsuccess!");
-            },
-            error: function(data){
-                alert("ASdf"+data);
-            }
-        })
+        var list = [];
+        var users = JSON.parse(users_JSON);
+        list = users.users;
+
+        var newUser = {};
+        newUser["username"] = username;
+        newUser["password"] = password;
+        newUser["address"] = address;
+        newUser["tel"] = tel;
+        newUser["point"] = 0;
+
+        list.push(newUser);
+        users_JSON = JSON.stringify(list);
+
+        var list2 = [];
+        var users2 = JSON.parse(users_JSON);
+        list2 = users2.users;
+        var output = "";
+        for(var user in list2){
+            output += list2[user].username + "\n";
+        }
+        alert(output);
 
     })
 
@@ -43,3 +45,38 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+
+
+// show product list used
+// $.ajax({
+//     url: "json/user.json",
+//     dataType: "text",
+//     success: function(data){
+//         var list = [];
+//         var users = JSON.parse(data);
+//         list = users.users;
+//
+//         var output = "";
+//         for(var user in list){
+//             output += list[user].username + "\n";
+//         }
+//
+//         var newUser = {};
+//         newUser["username"] = username;
+//         newUser["password"] = password;
+//         newUser["address"] = address;
+//         newUser["tel"] = tel;
+//         newUser["point"] = 0;
+//
+//         list.push(newUser);
+//
+//         data.upload
+//
+//         // alert(output);
+//
+//     },
+//     error: function(data){
+//         alert("ASdf"+data);
+//     }
+// })

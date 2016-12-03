@@ -1,0 +1,42 @@
+.product{
+    position: relative;
+}
+
+.list{
+    position: static;
+    height: auto;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #eeeeee;
+    font-size: 24px;
+}
+.list .header{
+    display: flex;
+}
+.header h1{
+    font-size: 46px;
+    font-family: Comfortaa;
+    padding: 10px;
+    flex-grow: 1;
+}
+.header .sort{
+    display: flex;
+}
+.collection-sort{
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+    top: 50%;
+    transform: translate(-40%,-15%);
+}
+.collection-sort select{
+    font-size: 16px;
+    padding: 5px;
+    border: 0px;
+    transition: 1s;
+    background-color: #5c666b;
+    border-radius: 5px;
+    color: #eeeeee;
+}
+

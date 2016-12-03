@@ -3,6 +3,7 @@ html, body{
     height: 100%;
     margin: 0px auto;
     font-family: Arial;
+    /*font-family: comfortaa bold;*/
     background-color: black;
     z-index: 0;
 }
@@ -49,6 +50,56 @@ a{
     color: #d1d2d2;
 }
 
+.news-slide{
+    /*background-color: #3F71AE;*/
+    width: 100%;
+    height: 700px;
+    padding-top: 60px;
+    position: static;
+}
+
+/*testing*/
+.testing-border-red{
+    border: 2px solid red;
+}
+.testing-border-blue{
+    border: 2px solid blue;
+}
+.testing-border-magenta{
+    border: 2px solid magenta;
+}
 
 
+/*font import*/
+@font-face{
+    font-family: remachine;
+    src: url('../font/use_remachine/RemachineScript_Personal_Use.ttf') format("truetype");
+}
+@font-face{
+    font-family: chasing;
+    src: url('../font/use2_chasing/ChasingEmbersDemoVersion.ttf') format("truetype");
+}
+@font-face{
+    font-family: comfortaa;
+    src: url('../font/title/Comfortaa-Light.ttf') format("truetype");
+}
+@font-face{
+    font-family: comfortaa;
+    src: url('../font/title/Comfortaa-Regular.ttf') format("truetype");
+    font-weight: normal;
+}
+@font-face{
+    font-family: comfortaa;
+    src: url('../font/title/Comfortaa-Bold.ttf') format("truetype");
+    font-weight: bold;
+}
+@font-face{
+    font-family: geosans;
+    src: url('../font/content/GeosansLight.ttf') format("truetype");
+}
+@font-face{
+    font-family: geosans;
+    src: url('../font/content/GeosansLight-Oblique.ttf') format("truetype");
+    font-weight: bold;
+}
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/product_slide.js"></script>
+</head>
+<body onload="changeImgTimer()">
+    <div class="cover-vdi">
+        <video id="cover" loop autoplay>
+            <source id="mp4" src="video/coding.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="product">
+        <div class="header">
+            <div class="navbar">
+                <div class="anm-button pullUp">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#apple">Apple</a></li>
+                        <li><a href="#desktop">Desktop</a></li>
+                        <li><a href="#tablet">Tablet</a></li>
+                        <li><a href="#search">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-slide testing-border-blue">
+            <img class="mySlides set-slide-img rightToLeft start" src="img/iphone7.jpg" style="width:100%">
+            <img class="mySlides set-slide-img rightToLeft" src="img/macpro.jpg" style="width:100%">
+            <img class="mySlides set-slide-img rightToLeft" src="img/iPadmini4.PNG" style="width:100%">
+            <div class="prev set-left set-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="next set-right set-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <div class="set-center set-display-bottommiddle" style="width:100%">
+                <span class="set-badge set-transparent set-hover-white dot set-white" onclick="currentDiv(1)"></span>
+                <span class="set-badge set-transparent set-hover-white dot set-white" onclick="currentDiv(2)"></span>
+                <span class="set-badge set-transparent set-hover-white dot set-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+
+        <div class="list testing-border-red">
+            <div class="header testing-border-magenta">
+                <h1>Apple</h1>
+                <div class="sort">
+                    <div class="collection-sort">
+                        <label for="filter-by">Filter by : </label>
+                        <select id="filter-by">
+                            <option value="laptop">Laptop</option>
+                            <option value="phone">Mobile Phone</option>
+                            <option value="desktop">Desktop</option>
+                            <option value="pad">Pad</option>
+                        </select>
+                    </div>
+                    <div class="collection-sort">
+                        <label for="sort-by">Sort by : </label>
+                        <select id="sort-by">
+                            <option value="price">Price</option>
+                            <option value="star">Star</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

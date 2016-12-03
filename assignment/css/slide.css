@@ -69,6 +69,69 @@
     animation-duration: 1.5s;
 }
 
+/*product slides*/
+.set-center{
+    text-align: center !important;
+}
+.set-slide-img{
+    height: 100%;
+    width: 100%;
+}
+.set-display-bottommiddle{
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%,0%);
+    -webkit-transform: translate(-50%,0%);
+}
+.set-left{
+    float: left !important;
+    padding-left: 16px !important;
+}
+.set-right{
+    float: right !important;
+    padding-right: 16px !important;
+}
+.set-hover-text-khaki:hover{
+    color: #b4aa50 !important;
+}
+.set-badge{
+    background-color: #9e9e9e;
+    /*color: #fff;*/
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    /*border: 1px solid #ccc !important;*/
+    height: 5px;
+    width: 50px;
+    padding: 0 5px 0 5px;
+}
+.set-hover-white{
+    -webkit-transition: background-color .3s,
+        color .15s,
+        box-shadow .3s,
+        opacity 0.3s,
+        filter 0.3s;
+    transition: background-color .3s,
+        color .15s,
+        box-shadow .3s,
+        opacity 0.3s,
+        filter 0.3s;
+}
+.set-white, .set-hover-white:hover{
+    /*color: #000 !important;*/
+    background-color: #5c5c5c !important;
+}
+.set-left, .set-right, .set-badge {
+    cursor: pointer;
+}
+.rightToLeft {
+    -webkit-animation-name: rightToLeft;
+    -webkit-animation-duration: 2s;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+}
+
 @-webkit-keyframes fade {
     from {
         opacity: .1;
@@ -94,4 +157,22 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+}
+
+/*animation for product slides*/
+@keyframes rightToLeft {
+    from{
+        left: 100px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@-webkit-keyframes rightToLeft {
+    from{
+        left: 100px;
+    }
+    to{
+        left: 0px;
+    }
 }
