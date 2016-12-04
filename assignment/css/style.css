@@ -4,6 +4,7 @@ html, body{
     margin: 0px auto;
     font-family: Arial;
     /*font-family: comfortaa bold;*/
+    font-family: Comfortaa;
     background-color: black;
     z-index: 0;
 }
@@ -67,6 +68,15 @@ a{
 }
 .testing-border-magenta{
     border: 2px solid magenta;
+}
+.testing-border-greenyellow{
+    border: 2px solid greenyellow;
+}
+.testing-border-brown{
+    border: 2px solid brown;
+}
+.testing-border-darkorange{
+    border: 2px solid darkorange;
 }
 
 

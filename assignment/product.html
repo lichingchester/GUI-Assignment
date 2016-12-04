@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/product.css">
     <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="js/product_type.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/product_slide.js"></script>
 </head>
@@ -26,21 +27,21 @@
                 <div class="anm-button pullUp">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#apple">Apple</a></li>
-                        <li><a href="#desktop">Desktop</a></li>
-                        <li><a href="#tablet">Tablet</a></li>
+                        <li><a href="product.html?type=apple">Apple</a></li>
+                        <li><a href="product.html?type=desktop">Desktop</a></li>
+                        <li><a href="product.html?type=tablet">Tablet</a></li>
                         <li><a href="#search">Search</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="news-slide testing-border-blue">
+        <div class="news-slide">
             <img class="mySlides set-slide-img rightToLeft start" src="img/iphone7.jpg" style="width:100%">
             <img class="mySlides set-slide-img rightToLeft" src="img/macpro.jpg" style="width:100%">
             <img class="mySlides set-slide-img rightToLeft" src="img/iPadmini4.PNG" style="width:100%">
-            <div class="prev set-left set-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="next set-right set-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <div class="prev-new set-left set-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="next-new set-right set-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
             <div class="set-center set-display-bottommiddle" style="width:100%">
                 <span class="set-badge set-transparent set-hover-white dot set-white" onclick="currentDiv(1)"></span>
                 <span class="set-badge set-transparent set-hover-white dot set-white" onclick="currentDiv(2)"></span>
@@ -48,33 +49,93 @@
             </div>
         </div>
 
-        <div class="list testing-border-red">
-            <div class="header testing-border-magenta">
-                <h1>Apple</h1>
-                <div class="sort">
-                    <div class="collection-sort">
-                        <label for="filter-by">Filter by : </label>
-                        <select id="filter-by">
-                            <option value="laptop">Laptop</option>
-                            <option value="phone">Mobile Phone</option>
-                            <option value="desktop">Desktop</option>
-                            <option value="pad">Pad</option>
-                        </select>
-                    </div>
-                    <div class="collection-sort">
-                        <label for="sort-by">Sort by : </label>
-                        <select id="sort-by">
-                            <option value="price">Price</option>
-                            <option value="star">Star</option>
-                        </select>
-                    </div>
-                    <div class="collection-sort">
-                        <!--radio button-->
-                    </div>
+        <div class="list">
+            <div class="list-header">
+                <div class="list-header-left">
+                    <h1>Apple</h1>
+                </div>
+                <div class="list-header-right search-bar">
+                    <form action="#this" method="get">
+                        <input class="box" type="text" name="search-keyword" placeholder="Search...">
+                    </form>
                 </div>
             </div>
-            <div class="body testing-border-blue">
 
+            <div class="list-body">
+                <div class="list-body-left">
+                    <ul>
+                        <li>
+                            <input type="radio" id="list-option-all" name="list-option">
+                            <label for="list-option-all">All Type</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="list-option-desktop" name="list-option">
+                            <label for="list-option-desktop">Desktop</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="list-option-laptop" name="list-option">
+                            <label for="list-option-laptop">Laptop</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="list-option-pad" name="list-option">
+                            <label for="list-option-pad">Pad</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="list-option-watch" name="list-option">
+                            <label for="list-option-watch">Watch</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="list-option-phone" name="list-option">
+                            <label for="list-option-phone">Phone</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-body-right testing-border-blue">
+                    <div class="products testing-border-greenyellow">
+                        <div class="product-card testing-border-red">
+                            <div class="product-image testing-border-magenta">
+                                <img src="img/product/mac/imac/1.jpg">
+                            </div>
+                            <div class="product-info testing-border-magenta">
+                                <h5>Winter Jacket</h5>
+                                <h6>$99.99</h6>
+                            </div>
+                        </div>
+                        <div class="product-card testing-border-red">
+                            <div class="product-image">
+                                <img src="img/product/mac/ipad/1.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h5>Winter Jacket</h5>
+                                <h6>$99.99</h6>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product/mac/iphone/1.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h5>Winter Jacket</h5>
+                                <h6>$99.99</h6>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product/mac/watch/1.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h5>Winter Jacket</h5>
+                                <h6>$99.99</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
