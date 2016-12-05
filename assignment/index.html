@@ -15,7 +15,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-
+<div id="main">
     <div class="cover-vdi">
         <video id="cover" loop autoplay>
             <source id="mp4" src="video/coding.mp4" type="video/mp4">
@@ -23,20 +23,32 @@
     </div>
 
     <div class="header">
+
+
         <div class="navbar">
+            <div id="memberSlide" class="memberSlide">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Personal</a>
+                <a href="#">Order</a>
+                <a href="gifts.html">Gifts</a>
+            </div>
+            <div class="clickkkk" onclick="openNav()">
+                <span class="member-span" onclick="openNav()">&#9776; Member</span>
+            </div>
+
             <div class="anm-button pullUp">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="product.html?type=apple">Apple</a></li>
                     <li><a href="product.html?type=desktop">Desktop</a></li>
                     <li><a href="product.html?type=tablet">Tablet</a></li>
-                    <li><a href="#search">Search</a></li>
+                    <li><a href="shoppingCart.html">Shopping Cart</a></li>
                 </ul>
             </div>
         </div>
         <br>
         <div class="icon">
-            buy<span>TheBest</span>
+            buy<span onclick="openNav()">TheBest</span>
         </div>
         <br>
         <div class="navbar-main">
@@ -53,7 +65,7 @@
                 </div>
                 <br>
                 <div class="login">
-                    <form action="#login">
+                    <form action="login.html">
                         <input type="text" placeholder="username" name="username" class="login-input"><br>
                         <input type="password" placeholder="password" name="pwd" class="login-input"><br>
                         <input type="submit" value="Login" class="login-submit">
@@ -155,6 +167,6 @@
             </div>
         </form>
     </div>
-
+</div>
 </body>
 </html>

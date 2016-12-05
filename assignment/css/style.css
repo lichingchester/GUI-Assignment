@@ -7,6 +7,7 @@ html, body{
     font-family: Comfortaa;
     background-color: black;
     z-index: 0;
+    transition: background-color .5s;
 }
 
 a{
@@ -59,24 +60,157 @@ a{
     position: static;
 }
 
+/****memberShip****/
+.login-main{
+    margin-top: 150px;
+    background: rgba(50,50,50,0.7);
+    color: #FFF;
+    font-size: 32px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    padding: 150px 100px 100px 300px;
+}
+
+.memberSlide {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.memberSlide a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.memberSlide a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.memberSlide .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.member-span{
+    position: relative;
+    font-size: 28px;
+    color: #FFF;
+    padding: 12px;
+    cursor: pointer;
+    /*z-index:100;*/
+}
+.clickkkk{
+    float: left;
+}
+
+#main {
+    transition: margin-left .5s;
+    /*padding: 16px;*/
+}
+
+@media screen and (max-height: 450px) {
+    .memberSlide {padding-top: 15px;}
+    .memberSlide a {font-size: 18px;}
+}
+
+.gifts-main{
+    margin-top: 150px;
+    background: rgba(50,50,50,0.7);
+    color: #FFF;
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 50px 300px 100px 300px;
+    border: 2px solid blue;
+}
+.gifts-main span{
+    font-size: 80px;
+}
+.gifts-list{
+    padding-top: 50px;
+}
+.gifts-list img{
+    width: 350px;
+    height: auto;
+}
+.gift-btn{
+    width: 100px;
+    height: 35px;
+    margin-left: 20px;
+    background: rgba(80,80,80,0.7);
+    border: 0px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Comfortaa;
+    cursor: pointer;
+}
+
+
+
+/**** chopping cart ****/
+.cart-body{
+    margin-top: 150px;
+    background: rgba(50,50,50,0.7);
+    color: #FFF;
+    font-size: 32px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 150px 300px 100px 300px;
+    border: 2px solid blue;
+}
+.cart-body span{
+    font-size: 120px;
+}
+.cart-table{
+    border: 2px solid red;
+    height: auto;
+    width: 70%;
+    position: relative;
+}
+
+
+
 /*testing*/
 .testing-border-red{
     border: 2px solid red;
+    z-index:1000;
 }
 .testing-border-blue{
     border: 2px solid blue;
+    z-index:1000;
 }
 .testing-border-magenta{
     border: 2px solid magenta;
+    z-index:1000;
 }
 .testing-border-greenyellow{
     border: 2px solid greenyellow;
+    z-index:1000;
 }
 .testing-border-brown{
     border: 2px solid brown;
+    z-index:1000;
 }
 .testing-border-darkorange{
     border: 2px solid darkorange;
+    z-index:1000;
 }
 
 

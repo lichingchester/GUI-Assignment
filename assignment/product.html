@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/product.css">
     <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="json/product.js"></script>
     <script src="js/product_type.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/product_slide.js"></script>
@@ -30,16 +31,16 @@
                         <li><a href="product.html?type=apple">Apple</a></li>
                         <li><a href="product.html?type=desktop">Desktop</a></li>
                         <li><a href="product.html?type=tablet">Tablet</a></li>
-                        <li><a href="#search">Search</a></li>
+                        <li><a href="shoppingCart.html">Shopping Cart</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="news-slide">
-            <img class="mySlides set-slide-img rightToLeft start" src="img/iphone7.jpg" style="width:100%">
-            <img class="mySlides set-slide-img rightToLeft" src="img/macpro.jpg" style="width:100%">
-            <img class="mySlides set-slide-img rightToLeft" src="img/iPadmini4.PNG" style="width:100%">
+            <img id="new_1" class="mySlides set-slide-img rightToLeft start" src="#" style="width:100%">
+            <img id="new_2" class="mySlides set-slide-img rightToLeft" src="#" style="width:100%">
+            <img id="new_3" class="mySlides set-slide-img rightToLeft" src="#" style="width:100%">
             <div class="prev-new set-left set-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
             <div class="next-new set-right set-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
             <div class="set-center set-display-bottommiddle" style="width:100%">
@@ -52,88 +53,31 @@
         <div class="list">
             <div class="list-header">
                 <div class="list-header-left">
-                    <h1>Apple</h1>
+                    <h1 id="header-title">title</h1>
                 </div>
                 <div class="list-header-right search-bar">
                     <form action="#this" method="get">
-                        <input class="box" type="text" name="search-keyword" placeholder="Search...">
+                        <input class="box" type="text" name="search-keyword" id="search-keyword" placeholder="Search...">
+                        <img src="img/icon/search.png" id="search-btn">
                     </form>
                 </div>
             </div>
 
             <div class="list-body">
                 <div class="list-body-left">
-                    <ul>
-                        <li>
-                            <input type="radio" id="list-option-all" name="list-option">
-                            <label for="list-option-all">All Type</label>
-                            <div class="check"></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="list-option-desktop" name="list-option">
-                            <label for="list-option-desktop">Desktop</label>
-                            <div class="check"><div class="inside"></div></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="list-option-laptop" name="list-option">
-                            <label for="list-option-laptop">Laptop</label>
-                            <div class="check"><div class="inside"></div></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="list-option-pad" name="list-option">
-                            <label for="list-option-pad">Pad</label>
-                            <div class="check"><div class="inside"></div></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="list-option-watch" name="list-option">
-                            <label for="list-option-watch">Watch</label>
-                            <div class="check"><div class="inside"></div></div>
-                        </li>
-                        <li>
-                            <input type="radio" id="list-option-phone" name="list-option">
-                            <label for="list-option-phone">Phone</label>
-                            <div class="check"><div class="inside"></div></div>
-                        </li>
+                    <ul id="search-type-list">
+                        <!-- added by product_type.js -->
                     </ul>
+                    <select class="search-sort-list">
+                        <option id="price-s" class="sort-s">Price Up</option>
+                        <option id="price-b" class="sort-b">Price Down</option>
+                        <option id="star-s" class="sort-s">Star Up</option>
+                        <option id="star-b" class="sort-b">Star Down</option>
+                    </select>
                 </div>
-                <div class="list-body-right testing-border-blue">
-                    <div class="products testing-border-greenyellow">
-                        <div class="product-card testing-border-red">
-                            <div class="product-image testing-border-magenta">
-                                <img src="img/product/mac/imac/1.jpg">
-                            </div>
-                            <div class="product-info testing-border-magenta">
-                                <h5>Winter Jacket</h5>
-                                <h6>$99.99</h6>
-                            </div>
-                        </div>
-                        <div class="product-card testing-border-red">
-                            <div class="product-image">
-                                <img src="img/product/mac/ipad/1.jpg">
-                            </div>
-                            <div class="product-info">
-                                <h5>Winter Jacket</h5>
-                                <h6>$99.99</h6>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="img/product/mac/iphone/1.jpg">
-                            </div>
-                            <div class="product-info">
-                                <h5>Winter Jacket</h5>
-                                <h6>$99.99</h6>
-                            </div>
-                        </div>
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="img/product/mac/watch/1.jpg">
-                            </div>
-                            <div class="product-info">
-                                <h5>Winter Jacket</h5>
-                                <h6>$99.99</h6>
-                            </div>
-                        </div>
+                <div class="list-body-right">
+                    <div class="products" id="list-product">
+                        <!-- displayed by product_type.js -->
                     </div>
                 </div>
             </div>

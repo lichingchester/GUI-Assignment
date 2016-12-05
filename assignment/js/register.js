@@ -21,7 +21,7 @@ var tel = getParameterByName("tel", document.url);
         newUser["point"] = 0;
 
         list.push(newUser);
-        users_JSON = JSON.stringify(list);
+        users_JSON = JSON.stringify(eval("(" + list + ")"));
 
         var list2 = [];
         var users2 = JSON.parse(users_JSON);
