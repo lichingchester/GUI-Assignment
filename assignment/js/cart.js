@@ -14,18 +14,19 @@ $(document).ready(function(){
         setCookie("cart", JSON.stringify(cartList), 120);
     // }
 
-    $.ajax({
-        url: "json/product.json",
-        dataType: "text",
-        async: false,
-        success: function(data){
-            var products = JSON.parse(data);
-            list = products.products;
-        },
-        error: function(data){
-            alert("ASdf"+data);
-        }
-    });
+    list = JSON_products.products;
+    // $.ajax({
+    //     url: "json/product.json",
+    //     dataType: "text",
+    //     async: false,
+    //     success: function(data){
+    //         var products = JSON.parse(data);
+    //         list = products.products;
+    //     },
+    //     error: function(data){
+    //         alert("ASdf"+data);
+    //     }
+    // });
 
     var result = JSON.parse(getCookie("cart"));
     for(var temp in result){
@@ -59,9 +60,10 @@ $(document).ready(function(){
 });
 
 function test(){
-    var userList = [];
-    var users = JSON.parse(users_JSON);
-    userList = users.users;
+    // var userList = [];
+    // var users = JSON.parse(users_JSON);
+    // userList = users.users;
+    var userList = JSON_users.users;
     var curUser = getCookie("login");
 
     for(var temp in userList){
@@ -70,8 +72,8 @@ function test(){
         }
     }
 
-    users_JSON = JSON.stringify(eval("(" + userList + ")"));
-    alert("ASdf");
+    // users_JSON = JSON.stringify(eval("(" + userList + ")"));
+    // alert("ASdf");
 }
 
 function getParameterByName(name, url) {

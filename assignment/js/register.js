@@ -10,8 +10,8 @@ var tel = getParameterByName("tel", document.url);
     $(document).ready(function(){
 
         var list = [];
-        var users = JSON.parse(users_JSON);
-        list = users.users;
+        // var users = JSON.parse(users_JSON);
+        list = JSON_users.users;
 
         var newUser = {};
         newUser["username"] = username;
@@ -20,12 +20,12 @@ var tel = getParameterByName("tel", document.url);
         newUser["tel"] = tel;
         newUser["point"] = 0;
 
-        list.push(newUser);
-        users_JSON = JSON.stringify(eval("(" + list + ")"));
+        JSON_users.users.push(newUser);
+        // users_JSON = JSON.stringify(eval("(" + list + ")"));
 
         var list2 = [];
-        var users2 = JSON.parse(users_JSON);
-        list2 = users2.users;
+        // var users2 = JSON.parse(users_JSON);
+        list2 = JSON_users.users;
         var output = "";
         for(var user in list2){
             output += list2[user].username + "\n";

@@ -11,27 +11,31 @@ var currentList = [];
 var current_selection = "";
 
 $(document).ready(function(){
-    $.ajax({
-        url: "json/product.json",
-        dataType: "text",
-        async: false,
-        success: function(data){
-            var products = JSON.parse(data);
-            list = products.products;
+    // $.ajax({
+    //     url: "json/data.json",
+    //     dataType: "json",
+    //     async: false,
+    //     success: function(data){
+    //         var products = JSON.parse(data);
+    //         list = products.products;
+    //
+    //         var output = "";
+    //         for(var item in list){
+    //             if(list[item].type == "apple"){
+    //                 output += list[item].name + "\n";
+    //             }
+    //         }
+    //
+    //         // alert(output);
+    //     },
+    //     error: function(data){
+    //         alert("ASdf"+data);
+    //     }
+    // });
 
-            var output = "";
-            for(var item in list){
-                if(list[item].type == "apple"){
-                    output += list[item].name + "\n";
-                }
-            }
-
-            // alert(output);
-        },
-        error: function(data){
-            alert("ASdf"+data);
-        }
-    });
+    // var products = JSON.parse(JSON_products);
+    list = JSON_products.products;
+    // alert(list[0].name);
 
     if(type == "apple"){
         appleSetting();

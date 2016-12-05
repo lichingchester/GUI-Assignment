@@ -7,8 +7,9 @@ var password = getParameterByName("pwd", document.url);
 var list = [];
 
 $(document).ready(function(){
-    var users = JSON.parse(users_JSON);
-    list = users.users;
+    // var users = JSON.parse(users_JSON);
+    list = JSON_users.users;
+    // alert(JSON_users.users[1].username);
     // alert("asdf");
     var chk = false;
 
@@ -16,7 +17,7 @@ $(document).ready(function(){
         if(list[user].username == username){
             if(list[user].password == password){
                 setCookie("login", list[user].username, 120);
-                alert("asdf");
+                break;
             }else{
                 chk = true;
             }

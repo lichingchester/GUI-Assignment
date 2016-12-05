@@ -137,7 +137,7 @@ a{
     width: 100%;
     position: relative;
     padding: 50px 300px 100px 300px;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 .gifts-main span{
     font-size: 80px;
@@ -173,13 +173,13 @@ a{
     width: 100%;
     position: relative;
     padding: 150px 300px 100px 300px;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 .cart-body span{
     font-size: 120px;
 }
 .cart-table{
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     height: auto;
     width: 70%;
     position: relative;

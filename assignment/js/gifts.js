@@ -4,8 +4,8 @@
 var list = [];
 
 $(document).ready(function() {
-    var users = JSON.parse(users_JSON);
-    list = users.users;
+    // var users = JSON.parse(users_JSON);
+    list = JSON_users.users;
 
     $(".point").html("");
     var user = getCookie("login");
